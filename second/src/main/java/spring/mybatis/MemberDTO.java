@@ -7,7 +7,7 @@ import org.springframework.web.multipart.MultipartFile;
 public class MemberDTO {
 
 	String id, pw, name, email, phone, address, indate, image;
-	MultipartFile imagefile;
+	MultipartFile imagefile; // a.jpg
 	
 	public MemberDTO() {
 		
@@ -72,6 +72,22 @@ public class MemberDTO {
 
 	public void setIndate(String indate) {
 		this.indate = indate;
+	}
+
+	public String getImage() {
+		return image;
+	}
+
+	public void setImage(String image) {
+		this.image = image;
+	}
+
+	public MultipartFile getImagefile() {
+		return imagefile;
+	}
+
+	public void setImagefile(MultipartFile imagefile) {
+		this.imagefile = imagefile;
 	}
 	
 	

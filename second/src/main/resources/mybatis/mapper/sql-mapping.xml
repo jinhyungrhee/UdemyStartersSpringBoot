@@ -27,7 +27,8 @@ select * from member order by indate desc limit
 </select>
 
 <insert id="insertmember" parameterType="memberdto" >
-	insert into member values(#{id}, #{pw}, #{name}, #{phone}, #{email}, #{address}, now())
+	insert into member values
+	(#{id}, #{pw}, #{name}, #{phone}, #{email}, #{address}, now(), #{image})
 </insert>
 
 <!-- memeberdto 객체가 parameter일 때 #{name} : memberdto에 있는 name이라는 변수 -->
